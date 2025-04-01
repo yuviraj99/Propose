@@ -194,7 +194,7 @@
         <p class="p1">Drag the papers to move!</p>
     </div>
     <!-- javascript file -->
-    <!-- <script src="script.js"></script> -->
+    <script src="script.js"></script>
     <!-- Update the script section in index.html -->
 <script>
     let highestZ = 1;
@@ -294,7 +294,10 @@
     });
 
     // Update viewport meta tag for better mobile handling
-    document.querySelector('meta[name="viewport"]').content = 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no';
+    if(document.querySelector('meta[name="viewport"]')){
+        document.querySelector('meta[name="viewport"]').content = 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no';
+
+    }
 </script>
 </body>
 
