@@ -194,7 +194,7 @@
         <p class="p1">Drag the papers to move!</p>
     </div>
     <!-- javascript file -->
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
     <!-- Update the script section in index.html -->
 <script>
     let highestZ = 1;
@@ -292,6 +292,22 @@
             tapCount = 0;
         }
     });
+
+const yesButton = document.getElementById("yes-btn");
+const popup = document.getElementById("popup");
+
+noButton.addEventListener("mouseover", () => {
+    noButton.style.position = "absolute";
+    noButton.style.left = Math.random() * 80 + "vw";
+    noButton.style.top = Math.random() * 80 + "vh";
+});
+
+yesButton.addEventListener("click", () => {
+    popup.style.display = "block";
+});
+
+// Hide the popup initially
+popup.style.display = "none";
 
     // Update viewport meta tag for better mobile handling
     if(document.querySelector('meta[name="viewport"]')){
