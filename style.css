@@ -132,3 +132,21 @@ p {
         opacity: 1;
     }
 }
+
+/* Add to style.css */
+.paper {
+    touch-action: none; /* Prevent browser touch actions */
+    user-select: none;  /* Prevent text selection */
+}
+
+@media (max-width: 768px) {
+    .paper {
+        padding: 15px 50px !important;
+        background-size: 400px;
+    }
+    
+    .loverbtn {
+        font-size: 18px;
+        padding: 15px 30px;
+    }
+}
